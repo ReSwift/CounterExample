@@ -7,19 +7,30 @@
 //
 
 import UIKit
+import ReSwift
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController, StoreSubscriber {
+    
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mainStore.subscribe(self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func newState(state: AppState) {
+        counterLabel.text = "\(mainStore.state.counter)"
     }
-
+    
+    @IBAction func downTouch(sender: AnyObject) {
+        mainStore.dispatch(CounterActionDecrease());
+    }
+    
+    @IBAction func upTouch(sender: AnyObject) {
+        mainStore.dispatch(CounterActionIncrease());
+    }
 
 }
 

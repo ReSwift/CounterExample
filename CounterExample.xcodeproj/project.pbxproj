@@ -12,7 +12,30 @@
 		3C135C351D53E29400EC9FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C331D53E29400EC9FC9 /* Main.storyboard */; };
 		3C135C371D53E29400EC9FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C361D53E29400EC9FC9 /* Assets.xcassets */; };
 		3C135C3A1D53E29400EC9FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C381D53E29400EC9FC9 /* LaunchScreen.storyboard */; };
+		3C135C461D53E94C00EC9FC9 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; };
+		3C135C471D53E94C00EC9FC9 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C135C4C1D53EC0F00EC9FC9 /* Reducers in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C491D53EC0F00EC9FC9 /* Reducers */; };
+		3C135C4D1D53EC0F00EC9FC9 /* State in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C4A1D53EC0F00EC9FC9 /* State */; };
+		3C135C4E1D53EC0F00EC9FC9 /* Store in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C4B1D53EC0F00EC9FC9 /* Store */; };
+		3C135C501D53EC6600EC9FC9 /* Actions in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C4F1D53EC6600EC9FC9 /* Actions */; };
+		3C135C601D547F7700EC9FC9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C5F1D547F7700EC9FC9 /* AppState.swift */; };
+		3C135C651D55C92200EC9FC9 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C641D55C92200EC9FC9 /* Actions.swift */; };
+		3C135C671D55C94300EC9FC9 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C661D55C94300EC9FC9 /* CounterReducer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C135C441D53E44A00EC9FC9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C135C471D53E94C00EC9FC9 /* ReSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C135C2C1D53E29400EC9FC9 /* CounterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +45,14 @@
 		3C135C361D53E29400EC9FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C135C391D53E29400EC9FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C135C3B1D53E29400EC9FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C135C451D53E94C00EC9FC9 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		3C135C491D53EC0F00EC9FC9 /* Reducers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Reducers; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/Reducers; sourceTree = "<absolute>"; };
+		3C135C4A1D53EC0F00EC9FC9 /* State */ = {isa = PBXFileReference; lastKnownFileType = folder; name = State; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/State; sourceTree = "<absolute>"; };
+		3C135C4B1D53EC0F00EC9FC9 /* Store */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Store; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/Store; sourceTree = "<absolute>"; };
+		3C135C4F1D53EC6600EC9FC9 /* Actions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Actions; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/Actions; sourceTree = "<absolute>"; };
+		3C135C5F1D547F7700EC9FC9 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = State/AppState.swift; sourceTree = "<group>"; };
+		3C135C641D55C92200EC9FC9 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = Actions/Actions.swift; sourceTree = "<group>"; };
+		3C135C661D55C94300EC9FC9 /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CounterReducer.swift; path = Reducers/CounterReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C135C461D53E94C00EC9FC9 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +70,7 @@
 		3C135C231D53E29400EC9FC9 = {
 			isa = PBXGroup;
 			children = (
+				3C135C451D53E94C00EC9FC9 /* ReSwift.framework */,
 				3C135C2E1D53E29400EC9FC9 /* CounterExample */,
 				3C135C2D1D53E29400EC9FC9 /* Products */,
 			);
@@ -54,6 +87,9 @@
 		3C135C2E1D53E29400EC9FC9 /* CounterExample */ = {
 			isa = PBXGroup;
 			children = (
+				3C135C631D55C91800EC9FC9 /* Reducers */,
+				3C135C621D55C91300EC9FC9 /* State */,
+				3C135C611D55C90900EC9FC9 /* Actions */,
 				3C135C2F1D53E29400EC9FC9 /* AppDelegate.swift */,
 				3C135C311D53E29400EC9FC9 /* ViewController.swift */,
 				3C135C331D53E29400EC9FC9 /* Main.storyboard */,
@@ -62,6 +98,30 @@
 				3C135C3B1D53E29400EC9FC9 /* Info.plist */,
 			);
 			path = CounterExample;
+			sourceTree = "<group>";
+		};
+		3C135C611D55C90900EC9FC9 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3C135C641D55C92200EC9FC9 /* Actions.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		3C135C621D55C91300EC9FC9 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				3C135C5F1D547F7700EC9FC9 /* AppState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		3C135C631D55C91800EC9FC9 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				3C135C661D55C94300EC9FC9 /* CounterReducer.swift */,
+			);
+			name = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +134,7 @@
 				3C135C281D53E29400EC9FC9 /* Sources */,
 				3C135C291D53E29400EC9FC9 /* Frameworks */,
 				3C135C2A1D53E29400EC9FC9 /* Resources */,
+				3C135C441D53E44A00EC9FC9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,9 +183,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C135C4E1D53EC0F00EC9FC9 /* Store in Resources */,
 				3C135C3A1D53E29400EC9FC9 /* LaunchScreen.storyboard in Resources */,
+				3C135C4D1D53EC0F00EC9FC9 /* State in Resources */,
+				3C135C4C1D53EC0F00EC9FC9 /* Reducers in Resources */,
 				3C135C371D53E29400EC9FC9 /* Assets.xcassets in Resources */,
 				3C135C351D53E29400EC9FC9 /* Main.storyboard in Resources */,
+				3C135C501D53EC6600EC9FC9 /* Actions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C135C601D547F7700EC9FC9 /* AppState.swift in Sources */,
+				3C135C671D55C94300EC9FC9 /* CounterReducer.swift in Sources */,
+				3C135C651D55C92200EC9FC9 /* Actions.swift in Sources */,
 				3C135C321D53E29400EC9FC9 /* ViewController.swift in Sources */,
 				3C135C301D53E29400EC9FC9 /* AppDelegate.swift in Sources */,
 			);
@@ -251,6 +319,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CounterExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
@@ -262,6 +334,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CounterExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
