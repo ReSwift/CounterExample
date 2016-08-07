@@ -17,17 +17,20 @@ class ViewController: UIViewController, StoreSubscriber {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // subscribe to state changes
         mainStore.subscribe(self)
     }
     
     func newState(state: AppState) {
+        // when the state changes, the UI is updated to reflect the current state
         counterLabel.text = "\(mainStore.state.counter)"
     }
     
+    // when either button is tapped, an action is dispatched to the store
+    // in order to update the application state
     @IBAction func downTouch(sender: AnyObject) {
         mainStore.dispatch(CounterActionDecrease());
     }
-    
     @IBAction func upTouch(sender: AnyObject) {
         mainStore.dispatch(CounterActionIncrease());
     }

@@ -9,6 +9,7 @@
 import UIKit
 import ReSwift
 
+// The global application store, which is responsible for managing the appliction state.
 let mainStore = Store<AppState>(
     reducer: CounterReducer(),
     state: nil
@@ -18,7 +19,6 @@ let mainStore = Store<AppState>(
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         return true
