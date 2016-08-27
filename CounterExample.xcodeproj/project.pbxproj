@@ -46,10 +46,9 @@
 		3C135C391D53E29400EC9FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C135C3B1D53E29400EC9FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C135C451D53E94C00EC9FC9 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
-		3C135C491D53EC0F00EC9FC9 /* Reducers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Reducers; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/Reducers; sourceTree = "<absolute>"; };
-		3C135C4A1D53EC0F00EC9FC9 /* State */ = {isa = PBXFileReference; lastKnownFileType = folder; name = State; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/State; sourceTree = "<absolute>"; };
-		3C135C4B1D53EC0F00EC9FC9 /* Store */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Store; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/Store; sourceTree = "<absolute>"; };
-		3C135C4F1D53EC6600EC9FC9 /* Actions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Actions; path = /Users/colineberhardt/Projects/CounterExample/CounterExample/CounterExample/Actions; sourceTree = "<absolute>"; };
+		3C135C491D53EC0F00EC9FC9 /* Reducers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Reducers; path = CounterExample/Reducers; sourceTree = "<absolute>"; };
+		3C135C4A1D53EC0F00EC9FC9 /* State */ = {isa = PBXFileReference; lastKnownFileType = folder; name = State; path = CounterExample/State; sourceTree = "<absolute>"; };
+		3C135C4F1D53EC6600EC9FC9 /* Actions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Actions; path = CounterExample/Actions; sourceTree = "<absolute>"; };
 		3C135C5F1D547F7700EC9FC9 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = State/AppState.swift; sourceTree = "<group>"; };
 		3C135C641D55C92200EC9FC9 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = Actions/Actions.swift; sourceTree = "<group>"; };
 		3C135C661D55C94300EC9FC9 /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CounterReducer.swift; path = Reducers/CounterReducer.swift; sourceTree = "<group>"; };
