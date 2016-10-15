@@ -28,10 +28,10 @@ class ViewController: UIViewController, StoreSubscriber {
     
     // when either button is tapped, an action is dispatched to the store
     // in order to update the application state
-    @IBAction func downTouch(sender: AnyObject) {
+    @IBAction func downTouch(_ sender: AnyObject) {
         mainStore.dispatch(CounterActionDecrease());
     }
-    @IBAction func upTouch(sender: AnyObject) {
+    @IBAction func upTouch(_ sender: AnyObject) {
         mainStore.dispatch(CounterActionIncrease());
     }
 
