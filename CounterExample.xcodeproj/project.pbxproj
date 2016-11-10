@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38284A6C1DD2AD070070068C /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; };
+		38284A6D1DD2AD070070068C /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C135C301D53E29400EC9FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C2F1D53E29400EC9FC9 /* AppDelegate.swift */; };
 		3C135C321D53E29400EC9FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C311D53E29400EC9FC9 /* ViewController.swift */; };
 		3C135C351D53E29400EC9FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C331D53E29400EC9FC9 /* Main.storyboard */; };
 		3C135C371D53E29400EC9FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C361D53E29400EC9FC9 /* Assets.xcassets */; };
 		3C135C3A1D53E29400EC9FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C381D53E29400EC9FC9 /* LaunchScreen.storyboard */; };
-		3C135C461D53E94C00EC9FC9 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; };
-		3C135C471D53E94C00EC9FC9 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C135C4C1D53EC0F00EC9FC9 /* Reducers in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C491D53EC0F00EC9FC9 /* Reducers */; };
 		3C135C4D1D53EC0F00EC9FC9 /* State in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C4A1D53EC0F00EC9FC9 /* State */; };
-		3C135C4E1D53EC0F00EC9FC9 /* Store in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C4B1D53EC0F00EC9FC9 /* Store */; };
+		3C135C4E1D53EC0F00EC9FC9 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3C135C501D53EC6600EC9FC9 /* Actions in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C4F1D53EC6600EC9FC9 /* Actions */; };
 		3C135C601D547F7700EC9FC9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C5F1D547F7700EC9FC9 /* AppState.swift */; };
 		3C135C651D55C92200EC9FC9 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C641D55C92200EC9FC9 /* Actions.swift */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3C135C441D53E44A00EC9FC9 /* Embed Frameworks */ = {
+		38284A6E1DD2AD070070068C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3C135C471D53E94C00EC9FC9 /* ReSwift.framework in Embed Frameworks */,
+				38284A6D1DD2AD070070068C /* ReSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C135C461D53E94C00EC9FC9 /* ReSwift.framework in Frameworks */,
+				38284A6C1DD2AD070070068C /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 				3C135C281D53E29400EC9FC9 /* Sources */,
 				3C135C291D53E29400EC9FC9 /* Frameworks */,
 				3C135C2A1D53E29400EC9FC9 /* Resources */,
-				3C135C441D53E44A00EC9FC9 /* Embed Frameworks */,
+				38284A6E1DD2AD070070068C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,11 +151,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Colin Eberhardt";
 				TargetAttributes = {
 					3C135C2B1D53E29400EC9FC9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = J66ACQBP6J;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -182,7 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C135C4E1D53EC0F00EC9FC9 /* Store in Resources */,
+				3C135C4E1D53EC0F00EC9FC9 /* (null) in Resources */,
 				3C135C3A1D53E29400EC9FC9 /* LaunchScreen.storyboard in Resources */,
 				3C135C4D1D53EC0F00EC9FC9 /* State in Resources */,
 				3C135C4C1D53EC0F00EC9FC9 /* Reducers in Resources */,
@@ -243,8 +245,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -266,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -289,8 +293,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -306,9 +312,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -318,14 +325,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J66ACQBP6J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CounterExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -333,14 +343,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J66ACQBP6J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CounterExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -363,6 +376,7 @@
 				3C135C401D53E29400EC9FC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
