@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import ReSwift
+
+typealias CellAction = (Bool) -> ()
 
 class CounterCell: UITableViewCell {
+    
+    var action: CellAction?
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var stepper: UIStepper!
+    
+    @IBAction func stepperPressed(_ sender: UIStepper) {
+        if sender.value > 0 {
+            self.action?(true)
+        } else {
+            self.action?(false)
+        }
+        sender.value = 0
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
