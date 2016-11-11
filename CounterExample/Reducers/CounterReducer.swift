@@ -12,10 +12,10 @@ struct CounterReducer: Reducer {
         var state = state ?? AppState()
         
         switch action {
-        case _ as CounterActionIncrease:
-            state.counter += 1
-        case _ as CounterActionDecrease:
-            state.counter -= 1
+        case let increaseAction as CounterActionIncrease:
+            state.counters[increaseAction.index] += 1
+        case let decreaseAction as CounterActionDecrease:
+            state.counters[decreaseAction.index] -= 1
         default:
             break
         }
