@@ -9,12 +9,11 @@
 import UIKit
 import ReSwift
 
-
 class ViewController: UIViewController, StoreSubscriber {
+    
     typealias StoreSubscriberStateType = AppState
     
     @IBOutlet weak var tableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +26,7 @@ class ViewController: UIViewController, StoreSubscriber {
 }
 
 extension ViewController : UITableViewDelegate {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -52,5 +52,4 @@ extension ViewController : UITableViewDataSource {
         
         return cell
     }
-    
 }
