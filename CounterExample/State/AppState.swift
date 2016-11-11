@@ -1,5 +1,7 @@
 import ReSwift
 
+typealias Counter = Int
+
 struct AppState: StateType {
-    var counter: Int = 0
+    var counters: [Counter] = []
 }
