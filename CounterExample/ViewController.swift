@@ -12,20 +12,20 @@ import ReSwift
 
 class ViewController: UIViewController, StoreSubscriber {
     typealias StoreSubscriberStateType = AppState
-
     
-    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // subscribe to state changes
         mainStore.subscribe(self)
-    }
+        }
     
     func newState(state: AppState) {
         // when the state changes, the UI is updated to reflect the current state
-        counterLabel.text = "\(mainStore.state.counter)"
+        tableView.reloadData()
     }
     
     // when either button is tapped, an action is dispatched to the store
@@ -39,3 +39,19 @@ class ViewController: UIViewController, StoreSubscriber {
 
 }
 
+extension ViewController : UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+}
+
+extension ViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //TODO: return actual cell
+        return UITableViewCell()
+    }
+    
+}

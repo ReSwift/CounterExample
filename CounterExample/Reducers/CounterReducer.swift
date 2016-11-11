@@ -13,9 +13,9 @@ struct CounterReducer: Reducer {
         
         switch action {
         case _ as CounterActionIncrease:
-            state.counter += 1
+            state.counters[0] += 1
         case _ as CounterActionDecrease:
-            state.counter -= 1
+            state.counters[0] -= 1
         default:
             break
         }
