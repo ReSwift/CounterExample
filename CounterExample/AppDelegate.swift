@@ -11,7 +11,7 @@ import ReSwift
 
 // The global application store, which is responsible for managing the appliction state.
 let mainStore = Store<AppState>(
-    reducer: CounterReducer(),
+    reducer: counterReducer,
     state: nil
 )
 
