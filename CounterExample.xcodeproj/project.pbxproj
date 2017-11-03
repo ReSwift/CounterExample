@@ -72,6 +72,7 @@
 				3C135C451D53E94C00EC9FC9 /* ReSwift.framework */,
 				3C135C2E1D53E29400EC9FC9 /* CounterExample */,
 				3C135C2D1D53E29400EC9FC9 /* Products */,
+				E35A506E1FAC22280048A7FF /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,16 @@
 			name = Reducers;
 			sourceTree = "<group>";
 		};
+		E35A506E1FAC22280048A7FF /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3C135C4A1D53EC0F00EC9FC9 /* State */,
+				3C135C491D53EC0F00EC9FC9 /* Reducers */,
+				3C135C4F1D53EC6600EC9FC9 /* Actions */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,7 +168,7 @@
 					3C135C2B1D53E29400EC9FC9 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = J66ACQBP6J;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0910;
 					};
 				};
 			};
@@ -335,7 +346,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -353,7 +365,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
