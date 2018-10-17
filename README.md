@@ -1,4 +1,4 @@
-#ReSwift Counter Example
+# ReSwift Counter Example
 
 An extremely simple example app, built with [ReSwift](https://github.com/ReSwift/ReSwift).
 
